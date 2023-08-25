@@ -1,0 +1,25 @@
+@media (max-width: 48rem) {
+  .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 27rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    margin-top: 30rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    margin-top: 45rem;
+  }
+}
