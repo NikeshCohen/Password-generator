@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+:root {
+  --Primary: rgb(150, 182, 197);
+  --Primary-shade: rgb(173, 196, 206);
+  --Primary-dark: rgb(45, 55, 59);
+  --Secondary: rgb(238, 224, 201);
+  --Secondary-shade: rgb(241, 240, 232);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--Primary);
+  color: var(--Secondary);
+}
+
+.container {
+  margin: 12%;
+  width: 90%;
+  max-width: 70rem;
+}
+
+.header-text {
+  font-size: 4.5rem;
+}
+
+.header-text span {
+  font-size: 5rem;
+  color: var(--Primary-dark);
+  border-bottom: 0.5rem solid var(--Primary-dark);
+  padding-bottom: 1rem;
+}
+
+.box {
+  width: 100%;
+  margin: 5rem 0 3rem 0;
+  background: var(--Secondary-shade);
+  color: var(--Primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.box input {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  color: var(--Primary);
+  background-color: var(--Secondary-shade);
+}
+
+.box input::placeholder {
+  color: var(--Primary-dark);
+  opacity: 0.7;
+}
+
+.copy-icon {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.flash-icon {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--Secondary);
+  background-color: var(--Primary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 10px 3px rgba(66, 66, 66, 0.3);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(0.15rem);
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--Secondary);
+  color: var(--Primary-dark);
+}
