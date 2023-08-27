@@ -1,11 +1,17 @@
 const passwordBox = $("#password");
 const passwordBtn = $(".btn");
 const password = $(".copy-icon");
+const favicon = $("link[rel='icon']");
 
 const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const symbols = "!#$%&()*+";
 const length = 10;
+
+$(document).on("visibilitychange", () => {
+  const state = document.hidden ? "-inactive" : "";
+  favicon.attr("href", `images/icon${state}.png`);
+});
 
 passwordBtn.on("click", () => {
   function generatePassword() {
@@ -45,4 +51,5 @@ passwordBtn.on("click", () => {
 password.on("click", () => {
   let passwordCopy = passwordBox.text();
   navigator.clipboard.writeText(passwordCopy);
+  alert("Password copied to clipboard");
 });
