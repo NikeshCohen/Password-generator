@@ -51,5 +51,4 @@ passwordBtn.on("click", () => {
 password.on("click", () => {
   let passwordCopy = passwordBox.text();
   navigator.clipboard.writeText(passwordCopy);
-  alert("Password copied to clipboard");
 });
